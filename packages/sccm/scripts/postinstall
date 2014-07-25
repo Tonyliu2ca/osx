@@ -1,0 +1,16 @@
+#!/bin/bash
+
+path_root="$3"; if [ -z "${path_root}" ] || [ "${path_root}" = "/" ]; then path_root=""; fi #++ fix //
+
+# Make it cleaner?
+# sudo "${path_root}/tmp/ccm/CMUninstall"
+# sudo "${path_root}/tmp/ccm/CMUninstall" -c
+
+# Let ccmsetup do it?
+#[ -e "${path_root}/tmp/ccm/CMClient.pkg" ] && sudo installer -pkg "${path_root}/tmp/ccm/CMClient.pkg" -target "${path_root}/"
+
+pushd "${path_root}/tmp/ccm"
+sudo "${path_root}/tmp/ccm/ccmsetup"
+sudo "${path_root}/tmp/ccm/enroll"
+
+exit 0

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+hdiutil attach /tmp/dmgdeploy.dmg  -noautoopen -nobrowse -noverify
+
+for p in `ls /Volumes/dmgdeploy`
+do
+	installer -pkg "/Volumes/dmgdeploy/${p}" -target /
+done
+
+hdiutil detach "/Volumes/dmgdeploy"
+
+exit 0

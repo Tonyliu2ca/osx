@@ -1,0 +1,12 @@
+#!/usr/bin/expect -f
+
+set timeout 20
+
+log_file -noappend /tmp/ccm/enroll.log
+
+spawn sudo /tmp/ccm/CMEnroll -s "YOURSERVER" -ignorecertchainvalidation -u "YOURDOMAIN\\YOURUSERNAME"
+expect "Please enter your password."
+send "YOURPASSWORD\r"
+expect "Successfully enrolled."
+
+interact
