@@ -6,6 +6,14 @@ sudo apachectl start
 sudo defaults write /System/Library/LaunchDaemons/org.apache.httpd Disabled -bool false
 
 
+sudo apachectl stop
+sudo cp -Rf /Library/WebServer/Documents /Users/Shared/www
+sudo chown -R root:wheel /Users/Shared/www
+sudo chmod -R 755 /Users/Shared/www
+sudo mv -f /Library/WebServer/Documents /Library/WebServer/Documents.bak
+sudo ln -s /Users/Shared/www /Library/WebServer/Documents
+sudo apachectl start
+
 exit
 
 # Enable Virtual Hosts and PHP
