@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>PBM_LPRv6</string>
+	<key>CFBundleIdentifier</key>
+	<string>jp.co.canon.print.CUPSPS2.PBM_LPRv6</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>2.00</string>
+	<key>CFPlugInDynamicRegisterFunction</key>
+	<string></string>
+	<key>CFPlugInDynamicRegistration</key>
+	<string>NO</string>
+	<key>CFPlugInFactories</key>
+	<dict>
+		<key>F23F9FF4-5C6B-11DE-B64A-001E5282D9DA</key>
+		<string>PBFactory</string>
+	</dict>
+	<key>CFPlugInTypes</key>
+	<dict>
+		<key>23F71E46-95CC-1226-AC04-000502ADB00B</key>
+		<array>
+			<string>F23F9FF4-5C6B-11DE-B64A-001E5282D9DA</string>
+		</array>
+	</dict>
+	<key>CFPlugInUnloadFunction</key>
+	<string></string>
+	<key>CSResourcesFileMapped</key>
+	<string>yes</string>
+	<key>PPDList</key>
+	<array>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV C9065/9075 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRAC9075S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV C9060/9070 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRAC9070S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV C7055/7065 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRAC7065S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV C5045/5051 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRAC5045S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV C5030/5035 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRAC5030S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iPR1110/1125/1135 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIPR1110S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR3225 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIR3225S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR3235/iR3245 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIR3235S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR3230 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIR3230S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV 6055/6065 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRA6065S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV 6075 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRA6075S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV 8085/8095 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRA8095S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV 8105 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRA8105S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV C2020i/2030i PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRAC2020iS2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV C2020/2030 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRAC2020S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV C2025 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRAC2025S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon LBP6650/3470 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCLBP6650S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV 4025/4035 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRA4025S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon iR-ADV 4045/4051 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCIRA4045S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon LBP7660C PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCLBP7660CS2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon LBP7680C/5280 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCLBP7680CS2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon LBP6660 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCLBP6660S2UK.ppd</string>
+		</dict>
+		<dict>
+			<key>PPDDeviceName</key>
+			<string>Canon LBP6680/3480 PS (UK)</string>
+			<key>PPDFileName</key>
+			<string>CNMCLBP6680S2UK.ppd</string>
+		</dict>
+	</array>
+</dict>
+</plist>

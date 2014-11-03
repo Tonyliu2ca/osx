@@ -1,0 +1,320 @@
+*PPD-Adobe: "4.3"
+*% Adobe Systems PostScript(R) Printer Description File
+
+*FormatVersion: "4.3"
+*FileVersion: "2.1"
+*LanguageEncoding: ISOLatin1
+*LanguageVersion: English
+*Product: "(uniFLOW Output Manager)"
+*PSVersion: "(2015.105) 9"
+*Manufacturer: "NT-ware"
+*ModelName: "uniFLOW OM Universal Driver"
+*ShortNickName: "uniFLOW OM Universal Driver"
+*NickName: "uniFLOW OM Universal Driver"
+*PCFileName: "MOMUD.PPD"
+
+*% General Information and Defaults ===============
+*ColorDevice: False
+*DefaultColorSpace: Grayscale
+*FreeVM: "172872"
+*LanguageLevel: "3"
+*VariablePaperSize: False
+*FileSystem: False
+*Throughput: "8"
+*Password: "0"
+*ExitServer: "
+  count 0 eq {  % is the password on the stack?
+    true
+  }{
+    dup    % potential password
+    statusdict /checkpassword get exec not
+  } ifelse
+  {  %  if no password or not valid
+    (WARNING : Cannot perform the exitserver command.) =
+    (Password supplied is not valid.) =
+    (Please contact the author of this software.) = flush
+    quit
+  } if
+  serverdict /exitserver get exec
+"
+*End
+
+*Reset: "
+  count 0 eq {  % is the password on the stack?
+    true
+  }{
+    dup    % potential password
+    statusdict /checkpassword get exec not
+  } ifelse
+  {  %  if no password or not valid
+    (WARNING : Cannot reset printer.) =
+    (Password supplied is not valid.) =
+    (Please contact the author of this software.) = flush
+    quit
+  } if
+  serverdict /exitserver get exec
+  systemdict /quit get exec
+  (WARNING : Printer Reset Failed.) = flush
+"
+*End
+
+*TTRasterizer: Type42
+*?TTRasterizer: "(Type42) ="
+
+*DefaultResolution: 1200dpi
+*?Resolution: "
+  save
+    currentpagedevice /HWResolution get
+    0 get
+    (          ) cvs print
+    (dpi)
+    = flush
+  restore
+"
+*End
+
+*% Halftone Information ===============
+*ScreenFreq: "60.0"
+*ScreenAngle: "45.0"
+*DefaultScreenProc: Dot
+*ScreenProc Dot: "
+{dup mul exch dup mul add 1.0 exch sub }
+"
+*End
+*ScreenProc Line: "{ pop }"
+*ScreenProc Ellipse: "{ dup 5 mul 8 div mul exch dup mul exch add sqrt 1 exch sub }"
+
+*DefaultTransfer: Null
+*Transfer Null: "{ }"
+*Transfer Null.Inverse: "{ 1 exch sub }"
+
+*% Paper Handling ===================
+*% Use these entries to set paper size most of the time, unless there is
+*% specific reason to use PageRegion.
+*OpenUI *PageSize: PickOne
+*OrderDependency: 30 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize Letter/US Letter: "
+    <</DeferredMediaSelection true /PageSize [612 792] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize Legal/US Legal: "
+    <</DeferredMediaSelection true /PageSize [612 1008] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize A5: "
+    <</DeferredMediaSelection true /PageSize [420 595] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize A4: "
+    <</DeferredMediaSelection true /PageSize [595 842] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize A3/A3: "
+    <</DeferredMediaSelection true /PageSize [842 1191] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize B5: "
+    <</DeferredMediaSelection true /PageSize [516 729] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize Monarch/Monarch Envelope Edge Fed: "
+    <</DeferredMediaSelection true /PageSize [611 792] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize Com10/Com10 Envelope Edge Fed: "
+    <</DeferredMediaSelection true /PageSize [610 792] /ImagingBBox null>> setpagedevice"
+*End
+*CloseUI: *PageSize
+
+*% These entries will set up the frame buffer. Usually used with manual feed.
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 40 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion Letter/US Letter: "
+    <</DeferredMediaSelection true /PageSize [612 792] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion Legal/US Legal: "
+    <</DeferredMediaSelection true /PageSize [612 1008] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion A5: "
+    <</DeferredMediaSelection true /PageSize [420 595] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion A4: "
+    <</DeferredMediaSelection true /PageSize [595 842] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion A3/A3: "
+<</DeferredMediaSelection true /PageSize [842 1191] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion B5: "
+    <</DeferredMediaSelection true /PageSize [516 729] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion Monarch/Monarch Envelope Edge Fed: "
+    <</DeferredMediaSelection true /PageSize [611 792] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion Com10/Com10 Envelope Edge Fed: "
+    <</DeferredMediaSelection true /PageSize [610 792] /ImagingBBox null>> setpagedevice"
+*End
+*CloseUI: *PageRegion
+
+*% The following entries provide information about specific paper keywords.
+*DefaultImageableArea: A4
+*ImageableArea Letter/US Letter: "0.0 0.0 612 792"
+*ImageableArea Legal/US Legal: "0.0 0.0 612 1008"
+*ImageableArea A3/A3: "0.0 0.0 842 1191"
+*ImageableArea A4: "0.0 0.0 595 842"
+*ImageableArea A5: "0.0 0.0 420 595"
+*ImageableArea B5: "0.0 0.0 516 729"
+*ImageableArea Monarch/Monarch Envelope Edge Fed: "0.0 0.0 611 792"
+*ImageableArea Com10/Com10 Envelope Edge Fed: "0.0 0.0 610 792"
+*?ImageableArea: "
+save
+  /cvp {(                ) cvs print ( ) print } bind def
+  /upperright {10000 mul floor 10000 div} bind def
+  /lowerleft {10000 mul ceiling 10000 div} bind def
+  newpath clippath pathbbox
+  4 -2 roll exch 2 {lowerleft cvp} repeat
+  exch 2 {upperright cvp} repeat flush
+restore
+"
+*End
+
+*% These provide the physical dimensions of the paper (by keyword)
+*DefaultPaperDimension: A4
+*PaperDimension Letter/US Letter: "612 792"
+*PaperDimension Legal/US Legal: "612 1008"
+*PaperDimension A3/A3: "842 1191"
+*PaperDimension A4: "595 842"
+*PaperDimension A5: "420 595"
+*PaperDimension B5: "516 729"
+*PaperDimension Monarch/Monarch Envelope Edge Fed: "611 792"
+*PaperDimension Com10/Com10 Envelope Edge Fed: "610 792"
+
+*RequiresPageRegion All: True
+*OpenUI *InputSlot: PickOne
+*OrderDependency: 20 AnySetup *InputSlot
+*DefaultInputSlot: Cassette
+*InputSlot Cassette: ""
+*CloseUI: *InputSlot
+
+*OpenUI *ManualFeed/Manual Feed: Boolean
+*OrderDependency: 20 AnySetup *ManualFeed
+*DefaultManualFeed: False
+*ManualFeed True:  ""
+*ManualFeed False: ""
+*?ManualFeed: "
+  save
+    currentpagedevice /ManualFeed get
+    {(True)}{(False)}ifelse = flush
+  restore
+"
+*End
+*CloseUI: *ManualFeed
+
+*DefaultOutputOrder: Normal
+
+*% Font Information =====================
+
+*?FontQuery: "
+ save
+   { count 1 gt
+      { exch dup 127 string cvs (/) print print (:) print
+        /Font resourcestatus {pop pop (Yes)} {(No)} ifelse =
+      } { exit } ifelse 
+   } bind loop
+   (*) = flush
+ restore
+"
+*End
+
+*?FontList: "
+save
+  (*) {cvn ==} 128 string /Font resourceforall
+  (*) = flush
+restore
+"
+*End
+
+*% Base fonts
+*DefaultFont: Courier
+*Font Courier: Standard "(004.000)" Standard ROM
+*Font Courier-Bold: Standard "(004.000)" Standard ROM
+*Font Courier-BoldOblique: Standard "(004.000)" Standard ROM
+*Font Courier-Oblique: Standard "(004.000)" Standard ROM
+*Font Symbol: Special "(001.008)" Special ROM
+*Font ZapfDingbats: Special "(002.000)" Special ROM
+
+*% Printer Messages (verbatim from printer):
+*Message: "%%[ exitserver: permanent state may be changed ]%%"
+*Message: "%%[ Flushing: rest of job (to end-of-file) will be ignored ]%%"
+*Message: "\FontName\ not found, using Courier"
+
+*% Status (format: %%[ status: <one of these> %%] )
+*Status: "idle"
+*Status: "busy"
+*Status: "waiting"
+*Status: "printing"
+*Status: "PrinterError: timeout, clearing printer"
+*Status: "PrinterError: paper entry misfeed"
+*Status: "PrinterError: warming up"
+*Status: "PrinterError: service call"
+*Status: "PrinterError: no toner cartridge"
+*Status: "PrinterError: no paper tray"
+*Status: "PrinterError: cover open"
+*Status: "PrinterError: resetting printer"
+*Status: "PrinterError: out of paper"
+*Status: "PrinterError: timeout"
+*Status: "PrinterError: manual feed timeout"
+
+*% Input Sources (format: %%[ status: <stat>; source: <one of these>]%% )
+*Source: "serial9"
+*Source: "serial25"
+*Source: "AppleTalk"
+
+*% Printer Error (format: %%[ PrinterError: <one of these>]%%)
+*PrinterError: "timeout, clearing printer"
+*PrinterError: "paper entry misfeed"
+*PrinterError: "warming up"
+*PrinterError: "service call"
+*PrinterError: "no toner cartridge"
+*PrinterError: "no paper tray"
+*PrinterError: "cover open"
+*PrinterError: "resetting printer"
+*PrinterError: "out of paper"
+*PrinterError: "timeout"
+*PrinterError: "manual feed timeout"
+
+*%DeviceAdjustMatrix: "[1 0 0 1 0 0]"
+
+*% Color Separation Information =====================
+
+*DefaultColorSep: ProcessBlack.60lpi.300dpi/60 lpi / 300 dpi
+
+*InkName: ProcessBlack/Process Black
+*InkName: CustomColor/Custom Color
+*InkName: ProcessCyan/Process Cyan
+*InkName: ProcessMagenta/Process Magenta
+*InkName: ProcessYellow/Process Yellow
+
+*% For 60 lpi / 300 dpi =====================================================
+
+*ColorSepScreenAngle ProcessBlack.60lpi.300dpi/60 lpi / 300 dpi: "45"
+*ColorSepScreenAngle CustomColor.60lpi.300dpi/60 lpi / 300 dpi: "45"
+*ColorSepScreenAngle ProcessCyan.60lpi.300dpi/60 lpi / 300 dpi: "15"
+*ColorSepScreenAngle ProcessMagenta.60lpi.300dpi/60 lpi / 300 dpi: "75"
+*ColorSepScreenAngle ProcessYellow.60lpi.300dpi/60 lpi / 300 dpi: "0"
+
+*ColorSepScreenFreq ProcessBlack.60lpi.300dpi/60 lpi / 300 dpi: "60"
+*ColorSepScreenFreq CustomColor.60lpi.300dpi/60 lpi / 300 dpi: "60"
+*ColorSepScreenFreq ProcessCyan.60lpi.300dpi/60 lpi / 300 dpi: "60"
+*ColorSepScreenFreq ProcessMagenta.60lpi.300dpi/60 lpi / 300 dpi: "60"
+*ColorSepScreenFreq ProcessYellow.60lpi.300dpi/60 lpi / 300 dpi: "60"
+
+*% For 53 lpi / 300 dpi =====================================================
+
+*ColorSepScreenAngle ProcessBlack.53lpi.300dpi/53 lpi / 300 dpi: "45.0"
+*ColorSepScreenAngle CustomColor.53lpi.300dpi/53 lpi / 300 dpi: "45.0"
+*ColorSepScreenAngle ProcessCyan.53lpi.300dpi/53 lpi / 300 dpi: "71.5651"
+*ColorSepScreenAngle ProcessMagenta.53lpi.300dpi/53 lpi / 300 dpi: "18.4349"
+*ColorSepScreenAngle ProcessYellow.53lpi.300dpi/53 lpi / 300 dpi: "0.0"
+
+*ColorSepScreenFreq ProcessBlack.53lpi.300dpi/53 lpi / 300 dpi: "53.033"
+*ColorSepScreenFreq CustomColor.53lpi.300dpi/53 lpi / 300 dpi: "53.033"
+*ColorSepScreenFreq ProcessCyan.53lpi.300dpi/53 lpi / 300 dpi: "47.4342"
+*ColorSepScreenFreq ProcessMagenta.53lpi.300dpi/53 lpi / 300 dpi: "47.4342"
+*ColorSepScreenFreq ProcessYellow.53lpi.300dpi/53 lpi / 300 dpi: "50.0"
+
+*% end of PPD file for generic Job Ticketing

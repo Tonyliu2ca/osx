@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>AboutPDE</string>
+	<key>CFBundleGetInfoString</key>
+	<string>3.40
+Copyright CANON INC. 2011</string>
+	<key>CFBundleIdentifier</key>
+	<string>jp.co.canon.CUPSPS2.PDEs.About</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>AboutPDE</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.40</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>3.40</string>
+	<key>CFPlugInFactories</key>
+	<dict>
+		<key>F23F7D08-5C6B-11DE-B64A-001E5282D9DA</key>
+		<string>PDEsPluginFactory</string>
+	</dict>
+	<key>CFPlugInTypes</key>
+	<dict>
+		<key>BDB091F4-E57F-11D3-B5CC-0050E4603277</key>
+		<array>
+			<string>F23F7D08-5C6B-11DE-B64A-001E5282D9DA</string>
+		</array>
+	</dict>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright CANON INC. 2011
+All Rights Reserved</string>
+</dict>
+</plist>

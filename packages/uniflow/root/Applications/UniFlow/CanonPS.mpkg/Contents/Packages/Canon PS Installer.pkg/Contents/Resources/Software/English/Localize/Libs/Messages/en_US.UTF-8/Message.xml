@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CNXML>
+<alert_longpaper><string>The document cannot be printed because the set paper size is not supported by this printer.
+Refer to the Driver Guide or on-line help for information about supported paper sizes, and enter the height and width within the set range.</string></alert_longpaper>
+<alert_jobaccount><string>Could not verify the entered ID and password.
+Make sure that your computer is connected to the device correctly or the device is turned on. Then, enter the correct ID and password again.</string></alert_jobaccount>
+<alert_dialnumber><string>No recipients are set.</string></alert_dialnumber>
+<alert_disconnect><string>Printer is not responding.
+Check the printer power and connection, and then try sending printing job again.</string></alert_disconnect>
+<alert_outputadjustment><string>Cannot print with the current print settings.
+Select [Fine Print Data] under [Advanced], and then try to print again.</string></alert_outputadjustment>
+</CNXML>

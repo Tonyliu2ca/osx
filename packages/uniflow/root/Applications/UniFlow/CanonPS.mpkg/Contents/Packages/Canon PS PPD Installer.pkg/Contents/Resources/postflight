@@ -1,0 +1,8 @@
+#!/bin/tcsh
+
+cd "$0:h"
+
+# Install ExternalFiles
+./InstallPPDs "$1/Contents/Resources"
+
+exit 0

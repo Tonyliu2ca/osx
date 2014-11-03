@@ -1,0 +1,18 @@
+var resource = [
+	{
+		id:		"open_next_sibling",
+		value:	"Show details"
+	},{
+		id:		"close_next_sibling",
+		value:	"Hide details"
+	},{
+		id:		"open_all",
+		value:	"Show all the detailed information"
+	},{
+		id:		"close_all",
+		value:	"Hide all the detailed information"
+	},{
+		id:		"top",
+		value:	"Top"
+	}
+];

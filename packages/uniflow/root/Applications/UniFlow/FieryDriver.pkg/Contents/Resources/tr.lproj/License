@@ -1,0 +1,128 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf480
+{\fonttbl\f0\fswiss\fcharset77 Helvetica-Bold;\f1\fswiss\fcharset77 Helvetica;\f2\froman\fcharset77 TimesNewRomanPSMT;
+}
+{\colortbl;\red255\green255\blue255;}
+{\info
+{\title EFI END USER AGREEMENT}
+{\author IS&T}
+{\*\company EFI}}\vieww12240\viewh15840\viewkind1\viewscale100
+\deftab720
+\pard\pardeftab720\ri0\qc
+
+\f0\b\fs20 \cf0 EFI Software End User License Agreement\
+\pard\pardeftab720\ri0
+
+\f1\b0 \cf0 \
+PLEASE READ THIS SOFTWARE LICENSE AGREEMENT (\'d2LICENSE AGREEMENT\'d3) CAREFULLY. THIS LICENSE AGREEMENT IS A LEGAL AGREEMENT BETWEEN YOU AND ELECTRONICS FOR IMAGING, INC. (\'d2EFI\'d3) REGARDING THE EFI SOFTWARE (\'d2SOFTWARE\'d3).  YOU AGREE THAT THIS AGREEMENT IS LIKE ANY WRITTEN NEGOTIATED AGREEMENT SIGNED BY YOU.  BY CLICKING TO ACKNOWLEDGE YOUR AGREEMENT DURING REVIEW OF AN ELECTRONIC VERSION OF THIS LICENSE AGREEMENT \ul OR\ulnone  BY INSTALLING, COPYING \ul OR\ulnone  BY OTHERWISE USING THE SOFTWARE, YOU AGREE TO BE BOUND BY THIS LICENSE AGREEMENT. THIS LICENSE AGREEMENT IS ENFORCEABLE AGAINST YOU AND ANY LEGAL ENTITY (E.G., SYSTEM INTEGRATOR, CONSULTANT OR CONTRACTOR) THAT INSTALLS OR USES THE SOFTWARE ON YOUR BEHALF.  IF YOU DO NOT AGREE, DO NOT INSTALL, COPY, OR OTHERWISE USE THE SOFTWARE, AND RETURN THE SOFTWARE TO YOUR PLACE OF PURCHASE FOR A FULL REFUND IN ACCORDANCE WITH ITS REFUND POLICIES.  \
+\
+NOTICE TO PARTIES THAT ACT AS AN AGENT OF AN END USER OR OTHERWISE DO NOT INTEND TO BE END USERS OF THE SOFTWARE:  IF YOU CLICK TO ACCEPT AN ELECTRONIC VERSION OF THIS AGREEMENT, OR INSTALL, COPY OR OTHERWISE USE THE SOFTWARE AS AN AGENT ACTING ON BEHALF OF THE INTENDED LICENSEE, THEN YOU WILL BE DEEMED TO BE THE USER OF THE SOFTWARE AND BOUND BY THE TERMS OF THIS AGREEMENT UNLESS YOU (I) DELIVER THE TANGIBLE MEDIA CONTAINING THE SOFTWARE AND THIS LICENSE AGREEMENT TO THE LICENSEE PRIOR TO PROVIDING THE LICENSEE ACCESS TO THE SOFTWARE, AND (II) REMOVE AND DESTROY ANY COPIES OF THE SOFTWARE IN YOUR POSSESSION. \
+\
+IF YOU HAVE EXECUTED A SEPARATE SIGNED WRITTEN AGREEMENT WITH EFI FOR THE SOFTWARE, IN THE EVENT OF ANY CONFLICTING TERMS AND CONDITIONS BETWEEN SUCH WRITTEN AGREEMENT AND THIS LICENSE AGREEMENT, THE TERMS AND CONDITIONS OF THE WRITTEN AGREEMENT SHALL CONTROL.\
+\pard\pardeftab720\ri0
+
+\f0\b \cf0 \
+License
+\f1\b0 \
+EFI grants you a limited, non-exclusive license to use the Software solely in accordance with the terms and conditions of this License Agreement, solely as specified in the EFI product documentation, and\'casolely with the product(s) specified in the EFI product documentation (\'d2Product(s)\'d3).  Some third-party materials distributed with the Software may be subject to other terms and conditions, which are typically found in a separate license agreement or \'d2Read Me\'d3 file located near such third party materials.\
+\
+The term \'d2Software\'d3 as used in this License Agreement shall mean the EFI software (including software provided by third party suppliers) and all documentation, downloads, on-line materials, bug fixes, patches, releases, release notes, updates, upgrades, technical support materials, and information regarding the EFI software. The terms and conditions of this License Agreement shall apply to and govern your use of all such items; however EFI may provide other written terms with an update, release or upgrade. \
+\
+The Software is licensed, not sold. You may use the Software solely for the purposes described in the EFI product documentation.  You may not rent, lease, sublicense, lend, or otherwise distribute the Software or use the Software in any time sharing, service bureau, or similar arrangement. Certain Software may only be installed at a single, physical location and any relocation of such Software will require EFI\'d5s written consent.\
+\
+You may not make or have made, or permit to be made, any copies of the Software or portions thereof, except one (1) backup or archive copy for the purposes permitted in this License Agreement; provided, however, that under no circumstances may you make or have made, or permit to be made, any copies of any portion of the Software that is included on any portion of the controller board or hardware of a product.  Any copies of the Software that you are permitted to make pursuant to this Agreement must contain the same copyright and other proprietary notices that appear on or in the Software.  \
+\
+EFI may occasionally verify the number of copies and configurations, and/or the physical location of Software in use by you.  Any such verification shall be conducted during normal business hours and in such a manner as not to unreasonably interfere with your normal business activities.  In the event such verification discloses an underpayment of fees, you shall promptly pay such underpaid fees to EFI in accordance with EFI\'d5s then-current price list. You agree not to localize, translate, disassemble, decompile, decrypt, reverse engineer, unbundle, repackage, discover the source code of, modify, create derivative works of, or in any way change any part of the Software.\
+\
+As between you and EFI, you assume all risk and are solely responsible for any and all liability resulting from your use of the Software in a way that violates (or that produces content that violates) any law or the rights of others including, without limitation, laws concerning copyright infringement or privacy.\
+
+\f0\b \
+Intellectual Property Rights
+\f1\b0 \
+You acknowledge and agree that all rights, title, and interest, including all intellectual property rights, in and relating to the Software, all EFI Products, and all copies, modifications, and derivative works thereof, are solely owned by and shall remain with EFI and its suppliers. Except for the express limited license granted in this License Agreement, no right or license of any kind is granted. You receive no\'carights or license under any patents, copyrights, trade secrets, trademarks (whether registered or unregistered), or other intellectual property. You agree not to adopt, register, or attempt to register any EFI trademark or trade name or any confusingly similar mark, URL, internet domain name, or symbol as your own name or the name of your affiliates or products, and agree not to take any other action which impairs or reduces the trademark rights of EFI or its suppliers. \
+\
+
+\f0\b Excluded License\
+\pard\pardeftab720\ri0
+
+\f1\b0 \cf0 Notwithstanding anything to the contrary, you are not licensed to (and you agree that you will not) integrate or use the Software in any manner that would cause the Software in whole or in part to become subject to any of the terms of an Excluded License.  \'d2Excluded License\'d3 means any license that requires as a condition of use, modification and/or distribution of software subject to the Excluded License, that such software or other software combined and/or distributed with such software be (i) disclosed or distributed in source code form; (ii) licensed for the purpose of making derivative works; or (iii) redistributable at no charge.\
+\
+\pard\pardeftab720\ri0
+
+\f0\b \cf0 Updates
+\f1\b0 \
+If the Software is an upgrade or update to a previous version of the Software, you must possess a valid license to such previous version in order to use such upgrade or update.  All upgrades and updates are provided to you on a license exchange basis.  You agree that by using an upgrade or update you voluntarily terminate your right to use any previous version of the Software.  As an exception, you may continue to use previous versions of the Software after you use the upgrade or update only to assist you in the transition to the upgrade or update, provided that the upgrade or update and the previous versions are installed on the same device.  Upgrades and updates may be licensed to you by EFI with additional or different terms.\
+
+\f0\b \
+Confidentiality
+\f1\b0 \
+The Software, including its structure, organization and code, constitutes valuable trade secrets and confidential, proprietary information of EFI and its suppliers and you may not distribute or disclose the Software. You may, however, permanently transfer all of your rights under this License Agreement to another person or legal entity provided that: (1) such a transfer is authorized under all applicable export laws and regulations, including the laws and regulations of the United States, including the United States Export Administration Regulations; (2) you transfer to the person or entity all of the Software (including all copies, updates, upgrades, media, printed documentation, and this License Agreement); (3) you retain no copies of the Software, including no backup, archival, or other copies, however stored; and (4) the recipient agrees to all of the terms and conditions of this License Agreement. \
+
+\f0\b \
+Termination
+\f1\b0 \
+Unauthorized use, copying, or disclosure of the Software, or any breach of this License Agreement will result in automatic termination of this license and will make available to EFI other legal remedies. In the event of termination, you must destroy all copies of the Software and all component parts thereof.  All\'caprovisions of this License Agreement relating to confidentiality of the Software, disclaimers of warranties, limitation of liability, remedies, damages, governing law, jurisdiction, venue, EFI\'d5s intellectual property rights and Adobe Software shall survive any termination of this license.\
+\
+If the Software contains a License Key, upon termination, EFI may immediately and without notice, execute the License Key, defined as a programming code, intentionally inserted into the Software, which if executed, renders the Software or portions thereof inoperable.  YOU ACKNOWLEDGE AND AGREE THAT THE SOFTWARE MAY CONTAIN A LICENSE KEY AND THAT EXECUTION OF SUCH LICENSE KEY SHALL RENDER THE SOFTWARE OR A PORTION THEREOF INOPERABLE.  YOU FURTHER ACKNOWLEDGE AND AGREE THAT THE LICENSE KEY IS NOT A VIRUS AND THAT IN THE EVENT THAT THE LICENSE KEY IS EXECUTED DUE TO YOUR BREACH, YOU MAY BE OBLIGATED TO PAY EFI\'d5S THEN CURRENT FEE TO REACTIVATE THE SOFTWARE, PLUS ANY OTHER APPLICABLE FEES, INCLUDING LICENSE FEES.\
+
+\f0\b \
+Limited Warranty and Disclaimer
+\f1\b0 \
+EFI warrants that the Software, if used as specified in the EFI product documentation, will perform substantially in accordance with the EFI product documentation for a period of ninety (90) days from the date of receipt when used on the recommended operating system, platform and hardware configuration. All warranty claims must be made, along with proof of purchase, within such ninety (90) day period.  EFI makes no warranty or representation that the Software will meet your specific requirements, that the operation of the Software will be uninterrupted, secure, fault-tolerant, or error free, or that all defects in the Software will be corrected. EFI makes no warranty, implied or otherwise, regarding the performance or reliability of any other Products or services or any third party products (software or hardware) or services. THE INSTALLATION OF ANY THIRD PARTY PRODUCTS OTHER THAN AS AUTHORIZED BY EFI WILL VOID THIS WARRANTY. USE, MODIFICATION, AND/OR REPAIR OF THE SOFTWARE OR AN EFI PRODUCT OTHER THAN AS AUTHORIZED BY EFI WILL VOID THIS WARRANTY. FURTHER, THIS LIMITED WARRANTY IS VOID IF A PROBLEM WITH THE SOFTWARE ARISES FROM ACCIDENT, ABUSE, MISAPPLICATION, ABNORMAL USE, VIRUS, WORM, OR SIMILAR CIRCUMSTANCE.  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EXCEPT FOR THE EXPRESS LIMITED WARRANTY SET FORTH ABOVE (\'d2LIMITED WARRANTY\'d3), EFI MAKES AND YOU RECEIVE NO REPRESENTATIONS OR WARRANTIES RELATING TO THE SOFTWARE, ANY PRODUCT AND/OR ANY SERVICES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR IN ANY OTHER PROVISION OF THIS AGREEMENT OR ANY OTHER COMMUNICATION. EFI AND ITS SUPPLIERS SPECIFICALLY DISCLAIM ALL IMPLIED WARRANTIES, REPRESENTATIONS, AND CONDITIONS, INCLUDING THOSE OF SECURITY, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THERE IS NO WARRANTY OR REPRESENTATION THAT THE OPERATION OF THE SOFTWARE AND/OR ANY PRODUCT WILL BE UNINTERRUPTED, FAULT-TOLERANT, SECURE, OR ERROR-FREE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOUR SOLE AND EXCLUSIVE REMEDY, AND THE ENTIRE LIABILITY OF EFI AND ITS SUPPLIERS, RELATING TO ANY AND ALL SOFTWARE, PRODUCTS, SERVICES, AND/OR APPLICABLE WARRANTIES SHALL BE, AT EFI\'d5S OPTION, (1) TO REPAIR OR REPLACE THE SOFTWARE THAT DOES NOT MEET THE LIMITED WARRANTY; OR (2) PROVIDE A REFUND OF THE PRICE PAID (IF ANY) FOR THE SOFTWARE THAT DOES NOT MEET THE LIMITED WARRANTY. EXCEPT AS PROVIDED IN THIS SECTION, EFI AND ITS SUPPLIERS SHALL PROVIDE NO REFUNDS, RETURNS, EXCHANGES, OR REPLACEMENTS.\
+
+\f0\b \
+Limitation of Liability
+\f1\b0 \
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOU AGREE THAT THE ENTIRE LIABILITY OF EFI AND ITS SUPPLIERS FOR ALL CLAIMS RELATED TO ANY SOFTWARE, PRODUCT, SERVICES, AND/OR THIS LICENSE AGREEMENT, REGARDLESS OF THE FORM OF ACTION (WHETHER IN CONTRACT, TORT, UNDER STATUTE, OR OTHERWISE), SHALL BE LIMITED TO THE AMOUNT PAID BY YOU, IF ANY, FOR THE EFI SOFTWARE. YOU AGREE THAT SUCH AMOUNT IS SUFFICIENT TO SATISFY THE ESSENTIAL PURPOSE OF THIS LICENSE AGREEMENT AND THAT SUCH A LIABILITY IS A FAIR AND REASONABLE ESTIMATE OF ANY LOSS AND DAMAGE LIKELY TO BE SUFFERED IN THE EVENT OF ANY WRONGFUL ACT OR OMISSION BY EFI AND/OR ITS SUPPLIERS. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL EFI AND ITS SUPPLIERS BE LIABLE FOR COST OF PROCUREMENT OF SUBSTITUTE SOFTWARE, PRODUCTS OR SERVICES, LOST PROFITS OR DATA, THIRD PARTY CLAIMS, OR ANY SPECIAL, INDIRECT, RELIANCE, CONSEQUENTIAL, EXEMPLARY, PUNITIVE, OR INCIDENTAL DAMAGES, HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, RELATED TO ANY SOFTWARE, PRODUCT, SERVICES AND/ OR THIS LICENSE AGREEMENT. THIS LIMITATION SHALL APPLY EVEN IF EFI AND ITS SUPPLIERS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. YOU AGREE THAT THE PRICE OF THE EFI SOFTWARE REFLECTS THIS ALLOCATION OF RISK. YOU ACKNOWLEDGE AND AGREE THAT THE FOREGOING LIMITATIONS OF LIABILITY AND DISCLAIMERS FORM AN ESSENTIAL ELEMENT OF THIS LICENSE AGREEMENT, WITHOUT WHICH EFI WOULD NOT HAVE LICENSED THE EFI SOFTWARE TO YOU.  BECAUSE SOME JURISDICTIONS DO NOT ALLOW SOME OR ALL OF THE EXCLUSIONS AND/OR LIMITATIONS OF LIABILITY HEREIN, SOME OR ALL OF THE ABOVE EXCLUSIONS AND LIMITATIONS MAY NOT APPLY TO YOU.\
+
+\f0\b \
+Export Restrictions
+\f1\b0 \
+The Software and EFI Products are subject to the export laws and regulations of the United States, including the United States Export Administration Regulations. The license granted to you herein is conditioned upon your compliance with all applicable export laws and regulations, including the export laws and regulations of the United States. You represent and agree that you will not use, disclose, distribute, transfer, export, or re-export any portion of the Software or any EFI Product in any form in violation of any applicable export laws and regulations, including the export laws and regulations of the United States.  In addition, if the Software is identified as an export controlled item under the applicable export laws and regulations, you represent and warrant that you are not a citizen of, or located within, an embargoed or otherwise restricted nation and that you are not otherwise prohibited under such laws and regulations from receiving the Software.\
+
+\f0\b \
+Adobe Software\
+\pard\pardeftab720\ri0
+
+\f1\b0 \cf0 The Software may contain the following Adobe Systems Incorporated (\'d2Adobe\'d3) materials:  (a) software included as part of the printing system, including PostScript\'a8 software, Font Programs (digitally-encoded machine-readable outline data encoded in special format and in encrypted form used to produce various typefaces) and other Adobe software (collectively, \'d2Printing Software\'d3), and (b) other software which runs on a computer system for use in conjunction with the Printing Software (\'d2Host Software\'d3).  The following terms are applicable to the materials provided by Adobe:\
+\
+\pard\tx360\pardeftab720\ri0
+\cf0 	
+\f0\b 1.	Printing Software. 
+\f1\b0 You may use the Printing Software (in object code form only) (i)\'caon a single output device that contains an embedded controller; OR (ii)\'cafor Printing Software residing on a host computer, on up to the authorized number of central processing units (\'d2CPUs\'d3) for which you are licensed, for imaging to the licensed output device(s), solely for your own internal business purposes.  You may not change the name of any driver software file or driver software icon without consent of EFI.  You may use Roman character Font Programs and Adobe Type Manager\'a8 to reproduce weights, styles, and versions of letters, numerals, characters and symbols (\'d2Typefaces\'d3) on up to five (5) computers for use with the Printing Software.\
+\pard\pardeftab720\ri0
+\cf0 \
+\pard\tx360\pardeftab720\ri0
+\cf0 	
+\f0\b 2.	Host Software. 
+\f1\b0 You may install the Host Software in a single location on a hard disk or other storage device on one (or the authorized number of) computer(s) for which you are licensed (\'d2Permitted No. of Computers\'d3), and, provided that the Host Software is configured for network use, install and use the Host Software on a single file server for use on a single local area network for either (but not both) of the following purposes: (i)\'capermanent installation onto a hard disk or other storage device on the Permitted No. of Computers; or (ii)\'cause of the Host Software over such network, provided the use of the Host Software does not exceed the Permitted No. of Computers.  You may make one backup copy of the Host Software (which shall not be installed or used).  \
+\pard\pardeftab720\ri0
+\cf0 \
+You are hereby notified that Adobe Systems Incorporated, a Delaware corporation located at 345 Park Avenue, San Jose, CA 95110-2704 (\'d2Adobe\'d3) is a third-party beneficiary to this License Agreement to the extent that this License Agreement contains provisions which relate to your use of any software, font programs, typefaces, and/or trademarks licensed or supplied by Adobe. Such provisions are made expressly for the benefit of Adobe and are enforceable by Adobe in addition to EFI. ADOBE WILL\'caHAVE NO LIABILITY WHATSOEVER TO YOU FOR ANY ADOBE SOFTWARE OR TECHNOLOGY LICENSED HEREUNDER.\
+\pard\pardeftab720\ri0
+
+\f0\b \cf0 \
+Consent to Use of Data
+\f1\b0 . \
+You agree that EFI may collect and use anonymously aggregated technical information gathered in any manner as part of product support services related to the Software.  Subject to EFI\'d5s then-current privacy policy and applicable laws and regulations, EFI may: (i) use this information to improve its products or to provide customized services or technologies to you; (ii) transfer this information to its affiliates, agents and partners; and (iii) transfer this information to the United States and/or any other country where EFI and its affiliates, agents and partners maintain facilities.\
+
+\f0\b \
+U.S. Government Restricted Rights
+\f1\b0 \
+Use, duplication, or disclosure of the Software by the United States Government is subject to restrictions as set forth in FAR 12.212 or DFARS 227.7202-3 -227.7202-4 and, to the extent required under U.S. federal law, the minimum restricted rights as set out in FAR 52.227-14, Restricted Rights Notice (June 1987) Alternate III(g)(3) (June 1987) or FAR 52.227-19 (June 1987). To the extent any technical data is provided pursuant to the Agreement, such data is protected per FAR 12.211 and DFARS 227.7102-2 and to the extent explicitly required by the U.S. Government, is subject to limited rights as set out in DFARS 252.227.7015 (November 1995) and DFARS 252.227-7037 (September 1999). In the event that any of the above referenced agency regulations are modified or superseded, the subsequent equivalent regulation shall apply. The name of the Contractor is Electronics for Imaging, Inc. \
+
+\f0\b \
+Governing Law and Jurisdiction
+\f1\b0 \
+The rights and obligations of the parties related to this License Agreement will be governed in all respects by the laws of the State of California exclusively, as such laws apply to contracts between California residents performed entirely within California. The United Nations Convention on Contracts for the International Sale of Goods and any other similar convention does not apply to this License Agreement. For all disputes related to the Software, Products, services, and/or this License Agreement, you consent to the exclusive personal jurisdiction and venue of the state courts in San Mateo County, California and the federal court for the Northern District of California. \
+
+\f0\b \
+General
+\f1\b0 \
+This Agreement is the entire agreement held between us and supersedes any other communications or advertising with respect to the Software, Products, services, and any other subject matter covered by this License Agreement. If any provision of the License Agreement is held invalid, such provision shall be deemed modified to the extent necessary to be enforceable and the other provisions in this License Agreement shall continue in full force and effect.  EFI is a registered trademark of Electronics for Imaging, Inc. in the U.S. Patent and Trademark Office and/or certain other foreign jurisdictions.\
+\
+If you have any questions, see the EFI web site at www.efi.com.\
+Electronics for Imaging, Inc.\uc0\u8232 303 Velocity Way\u8232 Foster City, CA 94404\u8232 USA\
+Copyright \'a9 2004-2010 Electronics for Imaging, Inc. All rights reserved.
+\f2 \
+\
+}

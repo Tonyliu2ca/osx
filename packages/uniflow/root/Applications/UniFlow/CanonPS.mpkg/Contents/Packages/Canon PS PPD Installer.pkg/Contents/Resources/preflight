@@ -1,0 +1,50 @@
+#!/bin/sh
+
+currentOSVersion=`sw_vers -productVersion`
+currentMajor=`echo "$currentOSVersion" | cut -d '.' -f1`
+currentMinor=`echo "$currentOSVersion" | cut -d '.' -f2`
+currentRevision=`echo "$currentOSVersion" | cut -d '.' -f3`
+
+if [ -z $currentRevision ] ; then
+	currentRevision=0
+fi
+
+currentMajor=`expr $currentMajor '*' 10000`
+currentMinor=`expr $currentMinor '*' 100`
+currentOSVersion=`expr $currentMajor + $currentMinor + $currentRevision`
+
+if [ $currentOSVersion -lt 100700 ] ; then
+    if ! [ -e "/Library/Printers" ] ; then
+        mkdir -m 775 /Library/Printers
+		chown root /Library/Printers
+		chgrp admin /Library/Printers
+    fi
+
+    if ! [ -e "/Library/Printers/PPDs" ] ; then
+        mkdir -m 775 /Library/Printers/PPDs
+		chown root /Library/Printers/PPDs
+		chgrp admin /Library/Printers/PPDs
+    fi
+    
+    if ! [ -e "/Library/Printers/PPDs/Contents" ] ; then
+        mkdir -m 775 /Library/Printers/PPDs/Contents
+		chown root /Library/Printers/PPDs/Contents
+		chgrp admin /Library/Printers/PPDs/Contents
+    fi
+
+    if ! [ -e "/Library/Printers/PPDs/Contents/Resources" ] ; then
+        mkdir -m 775 /Library/Printers/PPDs/Contents/Resources
+		chown root /Library/Printers/PPDs/Contents/Resources
+		chgrp admin /Library/Printers/PPDs/Contents/Resources
+    fi
+	
+	if [ $currentOSVersion -lt 100500 ] ; then
+		if ! [ -e "/Library/Printers/PPDs/Contents/Resources/en.lproj" ] ; then
+			mkdir -m 775 /Library/Printers/PPDs/Contents/Resources/en.lproj
+			chown root /Library/Printers/PPDs/Contents/Resources/en.lproj
+			chgrp admin /Library/Printers/PPDs/Contents/Resources/en.lproj
+		fi
+	fi
+fi
+
+exit 0

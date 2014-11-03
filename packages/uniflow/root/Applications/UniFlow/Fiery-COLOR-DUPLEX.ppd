@@ -1,0 +1,720 @@
+*PPD-Adobe: "4.3"
+*% Copyright 1993-2011 Electronics for Imaging, Inc.  All Rights Reserved.
+*% *********
+*% EFI Information Block
+*%
+*%EFFileVersion: 2.0
+*%
+*% *********
+*FormatVersion: "4.3"
+*LanguageEncoding: ISOLatin1
+*LanguageVersion: English
+*FileVersion: "1.0"
+*PSVersion: "(3019.001) 1"
+*PCFileName: "EF064602.PPD"
+*Product: "(Fiery Express Mac Driver)"
+*ShortNickName: "Fiery Express Mac Driver"
+*NickName: "Fiery Express Mac Driver"
+*ModelName: "Fiery Express Mac Driver"
+*Manufacturer: "EFI"
+
+
+
+
+*% ========== EFI Specific Informational Keys ==========
+
+
+
+
+*% ========== Driver Information ==========
+
+
+
+*% ========== Installable Options ==========
+
+*OpenGroup: InstallableOptions/Installable Options
+
+*CloseGroup: InstallableOptions
+
+
+*% ========== UIConstraints ==========
+
+
+
+
+
+
+*% ========== NonUIConstraints ==========
+
+
+
+
+
+*% ========== General Information ==========
+
+*FileSystem: True
+*DefaultResolution: 600dpi
+*Throughput: "65"
+*LanguageLevel: "3"
+*TTRasterizer: Type42
+*ColorDevice: True
+*DefaultColorSpace: CMYK
+*Reset: "
+   count 0 eq
+   { false } { true exch startjob } ifelse
+   not { (WARNING: Cannot reset printer.) =
+            (Missing or invalid password.) =
+            (Please contact the author of this software.) = flush quit
+          } if
+   systemdict /quit get exec
+   (WARNING: Printer Reset Failed.) = flush
+"
+*End
+*ExitServer: "
+   count 0 eq
+   { false } { true exch startjob } ifelse
+   not { (WARNING: Cannot modify initial VM.) =
+            (Missing or invalid password.) =
+            (Please contact the author of this software.) = flush quit
+          } if
+"
+*End
+*Password: "0"
+*FreeVM: "16632226"
+*PrintPSErrors: True
+*AccurateScreensSupport: True
+*ContoneOnly: True
+*FCacheSize None: 524288
+*VMOption None/Standard: "16632226"
+*RequiresPageRegion All: True
+*LandscapeOrientation: Plus90
+
+
+
+
+
+*%EFIFlags *InputSlot APPE|Calibrator|Column|Command|EFIRaster|Impose|ImposeMixedMedia|MMBlank|MMCover|MMTab|MixedMedia|Rerip|SummaryPane
+*%EFIGroup *InputSlot FPPaperSource/Media
+*OpenUI *InputSlot/Input tray:PickOne
+*OrderDependency: 20.0 AnySetup *InputSlot
+*DefaultInputSlot: AutoSelect
+*InputSlot AutoSelect/Auto tray select: "
+userdict /XJXEFIsetpageproperties known
+{ << /XJXsettrayselV2 [ 7 ] >> XJXEFIsetpageproperties }
+{ /XJXsettrayselV2 where
+{ pop 7 XJXsettrayselV2 } if
+} ifelse"
+*End
+*InputSlot ManualFeed/Manual Feed: "
+userdict /XJXEFIsetpageproperties known
+{ << /XJXsettrayselV2 [ 2 ] >> XJXEFIsetpageproperties }
+{ /XJXsettrayselV2 where
+{ pop 2 XJXsettrayselV2 } if
+} ifelse"
+*End
+*InputSlot Tray1/Tray1: "
+userdict /XJXEFIsetpageproperties known
+{ << /XJXsettrayselV2 [ 1 ] >> XJXEFIsetpageproperties }
+{ /XJXsettrayselV2 where
+{ pop 1 XJXsettrayselV2 } if
+} ifelse"
+*End
+*InputSlot Tray2/Tray2: "
+userdict /XJXEFIsetpageproperties known
+{ << /XJXsettrayselV2 [ 4 ] >> XJXEFIsetpageproperties }
+{ /XJXsettrayselV2 where
+{ pop 4 XJXsettrayselV2 } if
+} ifelse"
+*End
+*InputSlot Tray3/Tray3: "
+userdict /XJXEFIsetpageproperties known
+{ << /XJXsettrayselV2 [ 5 ] >> XJXEFIsetpageproperties }
+{ /XJXsettrayselV2 where
+{ pop 5 XJXsettrayselV2 } if
+} ifelse"
+*End
+*InputSlot Tray4/Tray4: "
+userdict /XJXEFIsetpageproperties known
+{ << /XJXsettrayselV2 [ 20 ] >> XJXEFIsetpageproperties }
+{ /XJXsettrayselV2 where
+{ pop 20 XJXsettrayselV2 } if
+} ifelse"
+*End
+*InputSlot Tray5/Tray5: "
+userdict /XJXEFIsetpageproperties known
+{ << /XJXsettrayselV2 [ 21 ] >> XJXEFIsetpageproperties }
+{ /XJXsettrayselV2 where
+{ pop 21 XJXsettrayselV2 } if
+} ifelse"
+*End
+*CloseUI: *InputSlot
+
+*%EFIFlags *EFDuplex APPE|Column|Command|EFIRaster|MMCover|MMTab|MixedMedia|Rerip|SummaryPane
+*%EFIGroup *EFDuplex FPLayout/Layout
+*OpenUI *EFDuplex/Duplex:PickOne
+*OrderDependency: 50.0 AnySetup *EFDuplex
+*DefaultEFDuplex: TopTop
+*EFDuplex False/Off: " userdict /XJXEFIsetpageproperties known 
+  { << /XJXsetduplex [ false ] >> XJXEFIsetpageproperties }
+  { userdict /XJXsetduplex known
+    { false XJXsetduplex } { << /Duplex false >> setpagedevice } ifelse
+  } ifelse "
+*End
+*EFDuplex TopTop/Right & left binding: " userdict /XJXEFIsetpageproperties known
+  { << /XJXsetduplex [ true ] /XJXsettumble [ false ] >> XJXEFIsetpageproperties }
+  { userdict /XJXsetduplex known
+    { true XJXsetduplex } { << /Duplex true >> setpagedevice } ifelse
+    userdict /XJXsettumble known
+    { false XJXsettumble } { << /Tumble false >> setpagedevice } ifelse
+  } ifelse "
+*End
+*EFDuplex TopBottom/Top binding: " userdict /XJXEFIsetpageproperties known
+  { << /XJXsetduplex [ true ] /XJXsettumble [ true ] >> XJXEFIsetpageproperties }
+  { userdict /XJXsetduplex known
+    { true XJXsetduplex } { << /Duplex true >> setpagedevice } ifelse
+    userdict /XJXsettumble known
+    { true XJXsettumble } { << /Tumble true >> setpagedevice } ifelse
+  } ifelse "
+*End
+*CloseUI: *EFDuplex
+
+*%EFIFlags *EFStapler APPE|Column|Command|EFIRaster|Impose|MMFinish|Rerip|SummaryPane
+*%EFIGroup *EFStapler FPFinishing/Finishing
+*OpenUI *EFStapler/Stapling:PickOne
+*OrderDependency: 50.0 AnySetup *EFStapler
+*DefaultEFStapler: False
+*EFStapler False/Off: "      userdict /XJXEFIsetpageproperties known    { << /XJXsetstapleV2 [0] >> XJXEFIsetpageproperties }    { /XJXsetstapleV2 where { pop 0 XJXsetstapleV2 } if } ifelse "
+*End
+*EFStapler 1UpLeftS/Top left corner: "      userdict /XJXEFIsetpageproperties known    { << /XJXsetstapleV2 [1] >> XJXEFIsetpageproperties }    { /XJXsetstapleV2 where { pop 1 XJXsetstapleV2 } if } ifelse "
+*End
+*EFStapler 1UpRightS/Top right corner: "      userdict /XJXEFIsetpageproperties known    { << /XJXsetstapleV2 [2] >> XJXEFIsetpageproperties }    { /XJXsetstapleV2 where { pop 2 XJXsetstapleV2 } if } ifelse "
+*End
+*EFStapler 2Left/Left 2 position: "      userdict /XJXEFIsetpageproperties known    { << /XJXsetstapleV2 [3] >> XJXEFIsetpageproperties }    { /XJXsetstapleV2 where { pop 3 XJXsetstapleV2 } if } ifelse "
+*End
+*EFStapler 2Right/Right 2 position: "      userdict /XJXEFIsetpageproperties known    { << /XJXsetstapleV2 [4] >> XJXEFIsetpageproperties }    { /XJXsetstapleV2 where { pop 4 XJXsetstapleV2 } if } ifelse "
+*End
+*EFStapler 2Up/Top 2 position: "      userdict /XJXEFIsetpageproperties known    { << /XJXsetstapleV2 [5] >> XJXEFIsetpageproperties }    { /XJXsetstapleV2 where { pop 5 XJXsetstapleV2 } if } ifelse "
+*End
+*EFStapler Center/Center: "      userdict /XJXEFIsetpageproperties known    { << /XJXsetstapleV2 [10] >> XJXEFIsetpageproperties }    { /XJXsetstapleV2 where { pop 10 XJXsetstapleV2 } if } ifelse "
+*End
+*CloseUI: *EFStapler
+
+
+*%EFIFlags *EFPrintSize APPE|Calibrator|ImposeMMCover|ImposeMixedMedia|MMBlank|MMCover|MMTab|MediaKey|MixedMedia|Rerip
+*%EFIGroup *EFPrintSize FPPaperSource/Media
+*OpenUI *EFPrintSize/Output Paper size:PickOne
+*OrderDependency: 50.0 AnySetup *EFPrintSize
+*DefaultEFPrintSize: SameAsPageSize
+*EFPrintSize SameAsPageSize/Same as page size: ""
+*EFPrintSize Letter/8 1/2x11: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageablePrintSize [ () ] /XJXsetPrintSize [ (LEFLetter) ] 
+ /XJXsetPrintSizeName [(Letter)] >> XJXEFIsetpageproperties }
+{/XJXSetImageablePrintSize where {pop () XJXSetImageablePrintSize} if /XJXsetPrintSize where {pop (LEFLetter) XJXsetPrintSize} if
+} ifelse "
+*End
+*EFPrintSize A4/A4: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageablePrintSize [ () ] /XJXsetPrintSize [ (LEFA4) ] 
+ /XJXsetPrintSizeName [(A4)] >> XJXEFIsetpageproperties }
+{/XJXSetImageablePrintSize where {pop () XJXSetImageablePrintSize} if /XJXsetPrintSize where {pop (LEFA4) XJXsetPrintSize} if
+} ifelse "
+*End
+*EFPrintSize A3/A3: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageablePrintSize [ () ] /XJXsetPrintSize [ (SEFA3) ] 
+ /XJXsetPrintSizeName [(A3)] >> XJXEFIsetpageproperties }
+{/XJXSetImageablePrintSize where {pop () XJXSetImageablePrintSize} if /XJXsetPrintSize where {pop (SEFA3) XJXsetPrintSize} if
+} ifelse "
+*End
+*EFPrintSize Legal/8 1/2x14: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageablePrintSize [ () ] /XJXsetPrintSize [ (SEFLegal) ] 
+ /XJXsetPrintSizeName [(Legal)] >> XJXEFIsetpageproperties }
+{/XJXSetImageablePrintSize where {pop () XJXSetImageablePrintSize} if /XJXsetPrintSize where {pop (SEFLegal) XJXsetPrintSize} if
+} ifelse "
+*End
+*EFPrintSize Tabloid/11x17: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageablePrintSize [ () ] /XJXsetPrintSize [ (SEFTabloid) ] 
+ /XJXsetPrintSizeName [(Tabloid)] >> XJXEFIsetpageproperties }
+{/XJXSetImageablePrintSize where {pop () XJXSetImageablePrintSize} if /XJXsetPrintSize where {pop (SEFTabloid) XJXsetPrintSize} if
+} ifelse "
+*End
+*EFPrintSize SRA3/SRA3: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageablePrintSize [ () ] /XJXsetPrintSize [ (SEFSRA3) ] 
+ /XJXsetPrintSizeName [(SRA3)] >> XJXEFIsetpageproperties }
+{/XJXSetImageablePrintSize where {pop () XJXSetImageablePrintSize} if /XJXsetPrintSize where {pop (SEFSRA3) XJXsetPrintSize} if
+} ifelse "
+*End
+*EFPrintSize 13x19/13x19: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageablePrintSize [ () ] /XJXsetPrintSize [ (SEF13x19) ] 
+ /XJXsetPrintSizeName [(13x19)] >> XJXEFIsetpageproperties }
+{/XJXSetImageablePrintSize where {pop () XJXSetImageablePrintSize} if /XJXsetPrintSize where {pop (SEF13x19) XJXsetPrintSize} if
+} ifelse "
+*End
+*EFPrintSize TabloidExtra/12x18: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageablePrintSize [ () ] /XJXsetPrintSize [ (SEFARCHB) ] 
+ /XJXsetPrintSizeName [(TabloidExtra)] >> XJXEFIsetpageproperties }
+{/XJXSetImageablePrintSize where {pop () XJXSetImageablePrintSize} if /XJXsetPrintSize where {pop (SEFARCHB) XJXsetPrintSize} if
+} ifelse "
+*End
+*EFPrintSize A5/A5: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageablePrintSize [ () ] /XJXsetPrintSize [ (LEFA5) ] 
+ /XJXsetPrintSizeName [(A5)] >> XJXEFIsetpageproperties }
+{/XJXSetImageablePrintSize where {pop () XJXSetImageablePrintSize} if /XJXsetPrintSize where {pop (LEFA5) XJXsetPrintSize} if
+} ifelse "
+*End
+*CloseUI: *EFPrintSize
+
+
+*%EFIFlags *EFColorMode APPE|Calibrator|Column|Command|EFIRaster|Impose|ImposeMixedMedia|MMCover|MixedMedia|Rerip|SummaryPane
+*%EFIGroup *EFColorMode FPColorWise/Color
+*OpenUI *EFColorMode/Color mode:PickOne
+*OrderDependency: 12.0 AnySetup *EFColorMode
+*DefaultEFColorMode: CMYK
+*EFColorMode CMYK/CMYK: "
+userdict /XJXEFIsetpageproperties known
+{  << /XJXsetcolormode [ (CMYK) ] >> XJXEFIsetpageproperties  }
+{  userdict /XJXsetcolormode known
+{ (CMYK) XJXsetcolormode } if
+} ifelse"
+*End
+*EFColorMode Grayscale/Grayscale: "
+userdict /XJXEFIsetpageproperties known
+{  << /XJXsetcolormode [ (Grayscale) ] >> XJXEFIsetpageproperties  }
+{  userdict /XJXsetcolormode known
+{ (Grayscale) XJXsetcolormode } if
+} ifelse"
+*End
+*?EFColorMode: " currentpagedevice /ProcessColorModel known
+{currentpagedevice /ProcessColorModel get == } if "
+*End
+*CloseUI: *EFColorMode
+
+*%EFIFlags *EFCompOverprint APPE|Calibrator|Command|Impose|Rerip|SummaryPane
+*%EFIGroup *EFCompOverprint FPColorWise/Color
+*OpenUI *EFCompOverprint/Composite overprint:Boolean
+*OrderDependency: 50.0 AnySetup *EFCompOverprint
+*DefaultEFCompOverprint: False
+*EFCompOverprint False/Off: " /XJXsetCompositeOverprint where { pop false XJXsetCompositeOverprint } if "
+*EFCompOverprint True/On: " /XJXsetCompositeOverprint where { pop true XJXsetCompositeOverprint
+} if "
+*End
+*CloseUI: *EFCompOverprint
+
+
+
+
+*% ========== Media Selection ==========
+
+*%EFIFlags *PageSize APPE|Calibrator|Command|MediaKey|Rerip|SummaryPane
+*%EFIGroup *PageSize FPPaperSource/Media
+*OpenUI *PageSize/Document size:PickOne
+*OrderDependency: 90.0 AnySetup *PageSize
+*DefaultPageSize: Letter
+*PageSize Letter/8 1/2x11: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (LEFLetter) ] 
+ /XJXsetPageSizeName [(Letter)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (LEFLetter) XJXsetpagesize } { << /PageSize [612 792] >> setpagedevice } ifelse } ifelse "
+*End
+*PageSize A4/A4: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (LEFA4) ] 
+ /XJXsetPageSizeName [(A4)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (LEFA4) XJXsetpagesize } { << /PageSize [595 842] >> setpagedevice } ifelse } ifelse "
+*End
+*PageSize A3/A3: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEFA3) ] 
+ /XJXsetPageSizeName [(A3)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEFA3) XJXsetpagesize } { << /PageSize [842.0 1191.0] >> setpagedevice } ifelse } ifelse "
+*End
+*PageSize Legal/8 1/2x14: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEFLegal) ] 
+ /XJXsetPageSizeName [(Legal)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEFLegal) XJXsetpagesize } { << /PageSize [612 1008] >> setpagedevice } ifelse } ifelse "
+*End
+*PageSize Tabloid/11x17: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEFTabloid) ] 
+ /XJXsetPageSizeName [(Tabloid)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEFTabloid) XJXsetpagesize } { << /PageSize [792 1224] >> setpagedevice } ifelse } ifelse "
+*End
+*PageSize SRA3/SRA3: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEFSRA3) ] 
+ /XJXsetPageSizeName [(SRA3)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEFSRA3) XJXsetpagesize } { << /PageSize [907 1275] >> setpagedevice } ifelse } ifelse "
+*End
+*PageSize 13x19/13x19: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEF13x19) ] 
+ /XJXsetPageSizeName [(13x19)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEF13x19) XJXsetpagesize } { << /PageSize [936 1368] >> setpagedevice } ifelse } ifelse "
+*End
+*PageSize TabloidExtra/12x18: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEFARCHB) ] 
+ /XJXsetPageSizeName [(TabloidExtra)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEFARCHB) XJXsetpagesize } { << /PageSize [864 1296] >> setpagedevice } ifelse } ifelse "
+*End
+*PageSize A5/A5: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (LEFA5) ] 
+ /XJXsetPageSizeName [(A5)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (LEFA5) XJXsetpagesize } { << /PageSize [420.0 595.0] >> setpagedevice } ifelse } ifelse "
+*End
+*?PageSize: " FieryXJdict /PageSizeQuery get exec = flush "
+*CloseUI: *PageSize
+
+
+*OpenUI *PageRegion:PickOne
+*OrderDependency: 95.0 AnySetup *PageRegion
+*DefaultPageRegion: Letter
+*PageRegion Letter/8 1/2x11: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (LEFLetter) ] 
+ /XJXsetPageSizeName [(Letter)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (LEFLetter) XJXsetpagesize } { << /PageSize [612 792] >> setpagedevice } ifelse } ifelse "
+*End
+*PageRegion A4/A4: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (LEFA4) ] 
+ /XJXsetPageSizeName [(A4)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (LEFA4) XJXsetpagesize } { << /PageSize [595 842] >> setpagedevice } ifelse } ifelse "
+*End
+*PageRegion A3/A3: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEFA3) ] 
+ /XJXsetPageSizeName [(A3)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEFA3) XJXsetpagesize } { << /PageSize [842.0 1191.0] >> setpagedevice } ifelse } ifelse "
+*End
+*PageRegion Legal/8 1/2x14: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEFLegal) ] 
+ /XJXsetPageSizeName [(Legal)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEFLegal) XJXsetpagesize } { << /PageSize [612 1008] >> setpagedevice } ifelse } ifelse "
+*End
+*PageRegion Tabloid/11x17: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEFTabloid) ] 
+ /XJXsetPageSizeName [(Tabloid)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEFTabloid) XJXsetpagesize } { << /PageSize [792 1224] >> setpagedevice } ifelse } ifelse "
+*End
+*PageRegion SRA3/SRA3: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEFSRA3) ] 
+ /XJXsetPageSizeName [(SRA3)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEFSRA3) XJXsetpagesize } { << /PageSize [907 1275] >> setpagedevice } ifelse } ifelse "
+*End
+*PageRegion 13x19/13x19: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEF13x19) ] 
+ /XJXsetPageSizeName [(13x19)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEF13x19) XJXsetpagesize } { << /PageSize [936 1368] >> setpagedevice } ifelse } ifelse "
+*End
+*PageRegion TabloidExtra/12x18: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (SEFARCHB) ] 
+ /XJXsetPageSizeName [(TabloidExtra)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (SEFARCHB) XJXsetpagesize } { << /PageSize [864 1296] >> setpagedevice } ifelse } ifelse "
+*End
+*PageRegion A5/A5: " userdict /XJXEFIsetpageproperties known
+{ << /XJXSetImageable [ () ] /XJXsetpagesizeInternal [ (LEFA5) ] 
+ /XJXsetPageSizeName [(A5)] >> XJXEFIsetpageproperties }
+{ /XJXSetImageable where { pop () XJXSetImageable } if
+  /XJXsetpagesize where { pop (LEFA5) XJXsetpagesize } { << /PageSize [420.0 595.0] >> setpagedevice } ifelse } ifelse "
+*End
+*CloseUI: *PageRegion
+
+
+
+
+*DefaultImageableArea: Letter
+*ImageableArea Letter/8 1/2x11: "0 0 612.0 792.0"
+*ImageableArea A4/A4: "0 0 595.0 842.0"
+*ImageableArea A3/A3: "0 0 842.0 1191.0"
+*ImageableArea Legal/8 1/2x14: "0 0 612.0 1008.0"
+*ImageableArea Tabloid/11x17: "0 0 792.0 1224.0"
+*ImageableArea SRA3/SRA3: "0 0 907.0 1275.0"
+*ImageableArea 13x19/13x19: "0 0 936.0 1368.0"
+*ImageableArea TabloidExtra/12x18: "0 0 864.0 1296.0"
+*ImageableArea A5/A5: "0 0 420.0 595.0"
+*?ImageableArea: "save /cvp { cvi 12 string cvs print ( ) print } bind def
+newpath clippath pathbbox
+4 -2 roll exch 2 {ceiling cvp} repeat
+exch 2 {floor cvp} repeat flush
+restore"
+*End
+
+
+*DefaultPaperDimension: Letter
+*PaperDimension Letter/8 1/2x11: "612.0 792.0"
+*PaperDimension A4/A4: "595.0 842.0"
+*PaperDimension A3/A3: "842.0 1191.0"
+*PaperDimension Legal/8 1/2x14: "612.0 1008.0"
+*PaperDimension Tabloid/11x17: "792.0 1224.0"
+*PaperDimension SRA3/SRA3: "907.0 1275.0"
+*PaperDimension 13x19/13x19: "936.0 1368.0"
+*PaperDimension TabloidExtra/12x18: "864.0 1296.0"
+*PaperDimension A5/A5: "420.0 595.0"
+
+*%DefaultPaperFeedDirection: Letter
+*%PaperFeedDirection Letter/8 1/2x11: "LongEdge"
+*%PaperFeedDirection A4/A4: "LongEdge"
+*%PaperFeedDirection A3/A3: "ShortEdge"
+*%PaperFeedDirection Legal/8 1/2x14: "ShortEdge"
+*%PaperFeedDirection Tabloid/11x17: "ShortEdge"
+*%PaperFeedDirection SRA3/SRA3: "ShortEdge"
+*%PaperFeedDirection 13x19/13x19: "ShortEdge"
+*%PaperFeedDirection TabloidExtra/12x18: "ShortEdge"
+*%PaperFeedDirection A5/A5: "LongEdge"
+
+
+
+
+
+*% ========== Halftone Information ==========
+
+*ScreenAngle: "45"
+*ScreenFreq: "85.0"
+*DefaultScreenProc: Dot
+*ScreenProc Dot: "{ abs exch abs 2 copy add 1 gt {1 sub dup mul exch 1 sub 
+dup mul add 1 sub} {dup mul exch dup mul add 1 exch sub}ifelse } "
+*End
+*ScreenProc Line: "{ exch pop abs neg }"
+*ScreenProc Ellipse: "{abs exch abs 2 copy 3 mul exch 4 mul add 3 sub dup 0
+lt { pop dup mul exch .75 div dup mul add 4 div 1 exch sub } { dup 1 gt{
+pop 1 exch sub dup mul exch 1 exch sub .75 div dup mul add 4 div 1 sub }
+{ .5 exch sub exch pop exch pop } ifelse  } ifelse }"
+*End
+*DefaultTransfer: Null
+*Transfer Null: "{ }"
+*Transfer Null.Inverse: "{ 1 exch sub }"
+
+
+
+
+*% ========== Custom Pagesize ==========
+
+*LeadingEdge Short: " "
+*LeadingEdge Long: " "
+*LeadingEdge PreferLong: " "
+*NonUIOrderDependency: 90.0 AnySetup *CustomPageSize
+*ParamCustomPageSize Width: 1 points 72 935.46
+*ParamCustomPageSize Height: 2 points 72 1584
+*ParamCustomPageSize WidthOffset: 3 points 0 0 
+*ParamCustomPageSize HeightOffset: 4 points 0 0 
+*ParamCustomPageSize Orientation: 5 int 0 3 
+*CustomPageSize True: "
+   /XJXsetpagesize where { pop XJXsetpagesize }
+    { 3 1 roll pop pop dup 0 eq exch 2 eq or { exch } if
+      2 array astore << /PageSize 3 -1 roll >>
+   setpagedevice } ifelse "
+*End
+*HWMargins: 0 0 0 0
+*MaxMediaWidth: "936"
+*MaxMediaHeight: "1584"
+*CenterRegistered: False
+
+
+
+
+
+
+
+
+
+
+*% ========== Font Information ==========
+
+*DefaultFont: Courier
+
+*Font AdobeSansMM: Standard "(001.000)" Standard ROM
+*Font AdobeSerifMM: Standard "(001.001)" Standard ROM
+*Font AlbertusMT: Standard "(001.000)" Standard Disk
+*Font AlbertusMT-Italic: Standard "(001.000)" Standard Disk
+*Font AlbertusMT-Light: Standard "(001.000)" Standard Disk
+*Font AntiqueOlive-Bold: Standard "(001.001)" Standard Disk
+*Font AntiqueOlive-Compact: Standard "(001.001)" Standard Disk
+*Font AntiqueOlive-Italic: Standard "(001.001)" Standard Disk
+*Font AntiqueOlive-Roman: Standard "(001.001)" Standard Disk
+*Font Apple-Chancery: Standard "(2.0)" Standard Disk
+*Font Arial-BoldItalicMT: Standard "(MS core font:v2.00)" Standard Disk
+*Font Arial-BoldMT: Standard "(MS core font :V2.00)" Standard Disk
+*Font Arial-ItalicMT: Standard "(MS core font:V2.00)" Standard Disk
+*Font ArialMT: Standard "(MS core font:V2.00)" Standard Disk
+*Font AvantGarde-Book: Standard "(002.000)" ExtendedRoman Disk
+*Font AvantGarde-BookOblique: Standard "(002.000)" ExtendedRoman Disk
+*Font AvantGarde-Demi: Standard "(002.000)" ExtendedRoman Disk
+*Font AvantGarde-DemiOblique: Standard "(002.000)" ExtendedRoman Disk
+*Font Bodoni: Standard "(001.002)" Standard Disk
+*Font Bodoni-Bold: Standard "(001.002)" Standard Disk
+*Font Bodoni-BoldItalic: Standard "(001.002)" Standard Disk
+*Font Bodoni-Italic: Standard "(001.002)" Standard Disk
+*Font Bodoni-Poster: Standard "(001.002)" Standard Disk
+*Font Bodoni-PosterCompressed: Standard "(001.001)" Standard Disk
+*Font Bookman-Demi: Standard "(002.000)" ExtendedRoman Disk
+*Font Bookman-DemiItalic: Standard "(002.000)" ExtendedRoman Disk
+*Font Bookman-Light: Standard "(002.000)" ExtendedRoman Disk
+*Font Bookman-LightItalic: Standard "(002.000)" ExtendedRoman Disk
+*Font Carta: Special "(001.001)" Special Disk
+*Font Chicago: Standard "(2.0)" Standard Disk
+*Font Clarendon: Standard "(001.001)" Standard Disk
+*Font Clarendon-Bold: Standard "(001.001)" Standard Disk
+*Font Clarendon-Light: Standard "(001.001)" Standard Disk
+*Font CooperBlack: Standard "(001.003)" Standard Disk
+*Font CooperBlack-Italic: Standard "(001.003)" Standard Disk
+*Font Copperplate-ThirtyThreeBC: Standard "(001.002)" Standard Disk
+*Font Copperplate-ThirtyTwoBC: Standard "(001.002)" Standard Disk
+*Font Coronet-Regular: Standard "(001.000)" ExtendedRoman Disk
+*Font Courier: Standard "(003.000)" ExtendedRoman Disk
+*Font Courier-Bold: Standard "(003.000)" ExtendedRoman Disk
+*Font Courier-BoldOblique: Standard "(003.000)" ExtendedRoman Disk
+*Font Courier-Oblique: Standard "(003.000)" ExtendedRoman Disk
+*Font Eurostile: Standard "(001.002)" Standard Disk
+*Font Eurostile-Bold: Standard "(001.001)" Standard Disk
+*Font Eurostile-BoldExtendedTwo: Standard "(001.002)" Standard Disk
+*Font Eurostile-ExtendedTwo: Standard "(001.002)" Standard Disk
+*Font Geneva: Standard "(2.0)" Standard Disk
+*Font GillSans: Standard "(001.002)" Standard Disk
+*Font GillSans-Bold: Standard "(001.001)" Standard Disk
+*Font GillSans-BoldCondensed: Standard "(001.001)" Standard Disk
+*Font GillSans-BoldItalic: Standard "(001.002)" Standard Disk
+*Font GillSans-Condensed: Standard "(001.001)" Standard Disk
+*Font GillSans-ExtraBold: Standard "(001.001)" Standard Disk
+*Font GillSans-Italic: Standard "(001.002)" Standard Disk
+*Font GillSans-Light: Standard "(001.001)" Standard Disk
+*Font GillSans-LightItalic: Standard "(001.002)" Standard Disk
+*Font Goudy: Standard "(001.003)" Standard Disk
+*Font Goudy-Bold: Standard "(001.002)" Standard Disk
+*Font Goudy-BoldItalic: Standard "(001.002)" Standard Disk
+*Font Goudy-ExtraBold: Standard "(001.001)" Standard Disk
+*Font Goudy-Italic: Standard "(001.002)" Standard Disk
+*Font Helvetica: Standard "(002.000)" ExtendedRoman Disk
+*Font Helvetica-Bold: Standard "(002.000)" ExtendedRoman Disk
+*Font Helvetica-BoldOblique: Standard "(002.000)" ExtendedRoman Disk
+*Font Helvetica-Condensed: Standard "(002.000)" ExtendedRoman Disk
+*Font Helvetica-Condensed-Bold: Standard "(002.000)" ExtendedRoman Disk
+*Font Helvetica-Condensed-BoldObl: Standard "(002.000)" ExtendedRoman Disk
+*Font Helvetica-Condensed-Oblique: Standard "(002.000)" ExtendedRoman Disk
+*Font Helvetica-Narrow: Standard "(002.000)" ExtendedRoman ROM
+*Font Helvetica-Narrow-Bold: Standard "(002.000)" ExtendedRoman ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(002.000)" ExtendedRoman ROM
+*Font Helvetica-Narrow-Oblique: Standard "(002.000)" ExtendedRoman ROM
+*Font Helvetica-Oblique: Standard "(002.000)" ExtendedRoman Disk
+*Font HoeflerText-Black: Standard "(2.0)" Standard Disk
+*Font HoeflerText-BlackItalic: Standard "(2.0)" Standard Disk
+*Font HoeflerText-Italic: Standard "(2.0)" Standard Disk
+*Font HoeflerText-Ornaments: Special "(2.0)" Special Disk
+*Font HoeflerText-Regular: Standard "(2.0)" Standard Disk
+*Font JoannaMT: Standard "(001.000)" Standard Disk
+*Font JoannaMT-Bold: Standard "(001.000)" Standard Disk
+*Font JoannaMT-BoldItalic: Standard "(001.000)" Standard Disk
+*Font JoannaMT-Italic: Standard "(001.000)" Standard Disk
+*Font LetterGothic: Standard "(001.004)" Standard Disk
+*Font LetterGothic-Bold: Standard "(001.006)" Standard Disk
+*Font LetterGothic-BoldSlanted: Standard "(001.005)" Standard Disk
+*Font LetterGothic-Slanted: Standard "(001.004)" Standard Disk
+*Font LubalinGraph-Book: Standard "(001.002)" Standard Disk
+*Font LubalinGraph-BookOblique: Standard "(001.002)" Standard Disk
+*Font LubalinGraph-Demi: Standard "(001.002)" Standard Disk
+*Font LubalinGraph-DemiOblique: Standard "(001.002)" Standard Disk
+*Font Marigold: Standard "(001.000)" Standard Disk
+*Font Monaco: Standard "(2.0)" Standard Disk
+*Font MonaLisa-Recut: Standard "(001.000)" Standard Disk
+*Font NewCenturySchlbk-Bold: Standard "(002.000)" ExtendedRoman Disk
+*Font NewCenturySchlbk-BoldItalic: Standard "(002.000)" ExtendedRoman Disk
+*Font NewCenturySchlbk-Italic: Standard "(002.000)" ExtendedRoman Disk
+*Font NewCenturySchlbk-Roman: Standard "(002.000)" ExtendedRoman Disk
+*Font NewYork: Standard "(2.0)" Standard Disk
+*Font Optima: Standard "(001.005)" Standard Disk
+*Font Optima-Bold: Standard "(001.005)" Standard Disk
+*Font Optima-BoldItalic: Standard "(001.000)" Standard Disk
+*Font Optima-Italic: Standard "(001.000)" Standard Disk
+*Font Oxford: Standard "(001.000)" Standard Disk
+*Font Palatino-Bold: Standard "(002.000)" ExtendedRoman Disk
+*Font Palatino-BoldItalic: Standard "(002.000)" ExtendedRoman Disk
+*Font Palatino-Italic: Standard "(002.000)" ExtendedRoman Disk
+*Font Palatino-Roman: Standard "(002.000)" ExtendedRoman Disk
+*Font StempelGaramond-Bold: Standard "(001.002)" Standard Disk
+*Font StempelGaramond-BoldItalic: Standard "(001.002)" Standard Disk
+*Font StempelGaramond-Italic: Standard "(001.002)" Standard Disk
+*Font StempelGaramond-Roman: Standard "(001.002)" Standard Disk
+*Font Symbol: Special "(001.008)" Special Disk
+*Font Tekton: Standard "(001.001)" Standard Disk
+*Font Times-Bold: Standard "(002.000)" ExtendedRoman Disk
+*Font Times-BoldItalic: Standard "(002.000)" ExtendedRoman Disk
+*Font Times-Italic: Standard "(002.000)" ExtendedRoman Disk
+*Font Times-Roman: Standard "(002.000)" ExtendedRoman Disk
+*Font TimesNewRomanPS-BoldItalicMT: Standard "(MS core font:V2.00)" Standard Disk
+*Font TimesNewRomanPS-BoldMT: Standard "(MS core font:V2.00)" Standard Disk
+*Font TimesNewRomanPS-ItalicMT: Standard "(MS core font:V2.00)" Standard Disk
+*Font TimesNewRomanPSMT: Standard "(MS core font:V2.00)" Standard Disk
+*Font Univers: Standard "(001.003)" Standard Disk
+*Font Univers-Bold: Standard "(001.003)" Standard Disk
+*Font Univers-BoldExt: Standard "(001.000)" Standard Disk
+*Font Univers-BoldExtObl: Standard "(001.000)" Standard Disk
+*Font Univers-BoldOblique: Standard "(001.003)" Standard Disk
+*Font Univers-Condensed: Standard "(001.002)" Standard Disk
+*Font Univers-CondensedBold: Standard "(001.001)" Standard Disk
+*Font Univers-CondensedBoldOblique: Standard "(001.001)" Standard Disk
+*Font Univers-CondensedOblique: Standard "(001.002)" Standard Disk
+*Font Univers-Extended: Standard "(001.000)" Standard Disk
+*Font Univers-ExtendedObl: Standard "(001.000)" Standard Disk
+*Font Univers-Light: Standard "(001.003)" Standard Disk
+*Font Univers-LightOblique: Standard "(001.003)" Standard Disk
+*Font Univers-Oblique: Standard "(001.003)" Standard Disk
+*Font Wingdings-Regular: Special "(Version 2.00)" Special Disk
+*Font ZapfChancery-MediumItalic: Standard "(002.000)" ExtendedRoman Disk
+*Font ZapfDingbats: Special "(002.000)" Special Disk
+
+*?FontQuery: "
+		save
+		{ count 1 gt
+		{ exch dup 212 string cvs (/) print print (:) print
+		/Font resourcestatus {pop pop (Yes)} {(No)} ifelse =
+		} { exit } ifelse
+		} bind loop
+		(*) = flush
+		restore"
+*End
+*?FontList: "
+		save (*) {cvn ==} 128 string /Font resourceforall
+		(*) = flush restore"
+*End
+
+
+
+
+*% ========== Printer Messages ==========
+
+
+
+
+
+*% ========== Color Seperation ==========
+
+*DefaultColorSep: ProcessBlack.85lpi.600dpi/600 dpi
+*ColorSepScreenAngle ProcessBlack.85lpi.600dpi/600 dpi: "45"
+*ColorSepScreenAngle CustomColor.85lpi.600dpi/600 dpi: "45"
+*ColorSepScreenAngle ProcessCyan.85lpi.600dpi/600 dpi: "15"
+*ColorSepScreenAngle ProcessMagenta.85lpi.600dpi/600 dpi: "75"
+*ColorSepScreenAngle ProcessYellow.85lpi.600dpi/600 dpi: "0"
+*ColorSepScreenFreq ProcessBlack.85lpi.600dpi/600 dpi: "85"
+*ColorSepScreenFreq CustomColor.85lpi.600dpi/600 dpi: "85"
+*ColorSepScreenFreq ProcessCyan.85lpi.600dpi/600 dpi: "85"
+*ColorSepScreenFreq ProcessMagenta.85lpi.600dpi/600 dpi: "85"
+*ColorSepScreenFreq ProcessYellow.85lpi.600dpi/600 dpi: "85"
+*InkName: P300FieryBlue/Fiery Blue
+*InkName: P199FieryRed/Fiery Red
+*InkName: PblackFieryBlack/Fiery Black
+*CustomCMYK P300FieryBlue: ".9 .9 .0 .0"
+*CustomCMYK P199FieryRed: ".0 .9 .9 .0"
+*CustomCMYK PblackFieryBlack: ".2 .1 .1 .9"
+*DefaultBlackSubstitution: True
+*BlackSubstitution True: ""
+*DefaultGuaranteedMaxSeparations: 250
+*GuaranteedMaxSeparations 250: ""
+
+
+*cupsFilter: "application/vnd.cups-postscript 0 /Library/Printers/efi/Filters/fierycupsfilter"
+
